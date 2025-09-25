@@ -1,4 +1,118 @@
+:root {
+    --default-background: #f4f4f4;
+    --secondary-background: #6943ff;
+}
+
+body.dark-mode {
+    background-color: #1f2937;
+    color: #e0e0e0;
+}
+
+body.dark-mode h3 {
+    color: #5a537b;
+}
+
+
+body.dark-mode .unit-result-container {
+    background-color: #1f2937;
+}
+
+
 body {
-    background: red;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* height: 100vh; */
+    font-family: "Inter", sans-serif;
+}
+
+h3 {
+    color: #5a537b;
+}
+
+.container {
+    background-color: var(--default-background);
+    border-radius: 4px;
+    /* padding: 10px; */
+    /* box-shadow: 0 4px 5px rgba(0, 0, 0, 0.1); */
+    max-width: 500px;
+    width: 90%;
+    margin: 30px;
+    overflow: hidden;
+}
+
+/* Conversion header section */
+.unit-conversion-container {
+    background-color: var(--secondary-background);
+    padding: 30px 20px;
     color: white;
+    /* border-radius: 4px;  */
+}
+
+.unit-conversion-container h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+/* Input field styling */
+input {
+    width: 30%;
+    height: 75px;
+    background-color: var(--secondary-background);
+    border: 2px solid #B295FF;
+    display: block;
+    margin: 30px auto;
+    border-radius: 4px;
+    color: white;
+    font-size: 58px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+/* Input on focus */
+input:focus{
+    outline: none;
+    border: 2px solid white;
+}
+
+/* Convert button styling */
+#convert-btn {
+    background: white;
+    color: black;
+    border-radius: 4px;
+    font-size: 17px;
+    width: 32%;
+    padding: 12px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#convert-btn:hover {
+    background-color: rgb(3, 16, 92);
+    border: 2px solid white;
+    color: white;
+}
+
+/* Result container styling */
+.unit-result-container {
+    background-color: white;
+    width: 85%;
+    margin: 25px auto;
+    border-radius: 4px;
+    padding: 5px 20px;
+    /* box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.05); */
+}
+
+#toggle-theme{
+    padding: 6px 15px;
+    margin: 10px 0 0;
+    background-color: black;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
 }
