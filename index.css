@@ -6,6 +6,7 @@
 body.dark-mode {
     background-color: black;
     color: #e0e0e0;
+    transition: all 0.3s ease;
 }
 
 body.dark-mode h3 {
@@ -15,10 +16,19 @@ body.dark-mode h3 {
 
 body.dark-mode .unit-result-container {
     background-color: #273549;
+    transition: all 0.3s ease;
 }
 
 body.dark-mode .container {
     background-color: #1f2937;
+    transition: all 0.3s ease;
+}
+
+body.dark-mode #toggle-theme {
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    transition: all 0.3s ease;
 }
 
 body {
@@ -115,10 +125,12 @@ input:focus{
 #toggle-theme{
     padding: 6px 15px;
     margin: 10px 0 0;
-    background-color: black;
+    background-color: rgb(13, 13, 31);
     color: white;
     border-radius: 4px;
     cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: bold;
     border: none;
 }
 
@@ -129,3 +141,4 @@ input:focus{
     vertical-align: middle;
     transition: all 0.3s ease;
 }
+
