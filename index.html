@@ -13,10 +13,13 @@
     <main class="container">
         <section class="unit-conversion-container">
             <h1>Metric/Imperial Unit Conversion</h1>
-            <input type="text" id="unit-input-el">
-            <button type="submit" id="convert-btn">Convert</button>
+            <input type="text" id="unit-input-el" placeholder="0">
+            <button id="convert-btn">Convert</button>
         </section>
-        <button id="toggle-theme">Dark Mode</button>
+        <button id="toggle-theme">
+            <img src="./assets/icons/dark-mode.svg" alt="Dark Mode Icon">
+           <span>Switch to Dark Mode</span>
+        </button>
         <section>
             <div class="unit-result-container unit-result">
                 <h3>Length (Meter/Feet)</h3>
@@ -41,6 +44,6 @@
 
 
     <!-- JavaScript -->
-     <script src="./index.js"></script>
+     <script type="module" src="./index.js"></script>
 </body>
 </html>

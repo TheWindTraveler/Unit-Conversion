@@ -1,5 +1,5 @@
-const toggleBtn = document.getElementById("toggle-theme");
+import { initThemeToggle } from "./scripts/theme.js";
 
-toggleBtn.addEventListener("click", function() {
-    document.body.classList.toggle("dark-mode");
-})
+document.addEventListener("DOMContentLoaded", () => {
+    initThemeToggle();
+});
