@@ -4,19 +4,22 @@
 }
 
 body.dark-mode {
-    background-color: #1f2937;
+    background-color: black;
     color: #e0e0e0;
 }
 
 body.dark-mode h3 {
-    color: #5a537b;
+    color: #CCC1FF;
 }
 
 
 body.dark-mode .unit-result-container {
-    background-color: #1f2937;
+    background-color: #273549;
 }
 
+body.dark-mode .container {
+    background-color: #1f2937;
+}
 
 body {
     margin: 0;
@@ -115,4 +118,5 @@ input:focus{
     color: white;
     border-radius: 4px;
     cursor: pointer;
+    border: none;
 }
